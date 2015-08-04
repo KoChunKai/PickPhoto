@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:src="@drawable/ic_close_white_24dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/done"
+        android:layout_alignTop="@+id/close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:src="@drawable/ic_done_all_white_24dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:numColumns="4"
+        android:layout_below="@+id/close"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="0"
+        android:id="@+id/count"
+        android:background="@drawable/badge"
+        android:gravity="center"
+        android:padding="1dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/done"
+        android:layout_alignRight="@+id/done"
+        android:layout_alignEnd="@+id/done"/>
+</RelativeLayout>

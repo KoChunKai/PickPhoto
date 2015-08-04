@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/photo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/folder_name"
+        android:layout_alignBottom="@+id/photo"
+        android:layout_alignLeft="@+id/photo"
+        android:layout_alignStart="@+id/photo"
+        android:layout_alignRight="@+id/photo"
+        android:layout_alignEnd="@+id/photo"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#7fffffff"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pick"
+        android:layout_alignTop="@+id/photo"
+        android:layout_alignRight="@+id/photo"
+        android:layout_alignEnd="@+id/photo"
+        android:src="@drawable/ic_pick"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+</RelativeLayout>
